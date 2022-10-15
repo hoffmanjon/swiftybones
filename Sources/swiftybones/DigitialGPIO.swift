@@ -8,7 +8,7 @@ public func sayHello() -> String {
 /**
  Defines the GPIOChip 
  */
-enum GPIOChip: String {
+public enum GPIOChip: String {
     case gpiochip0 = "gpiochip0"
     case gpiochip1 = "gpiochip1"
     case gpiochip2 = "gpiochip2"
@@ -55,7 +55,7 @@ public protocol GPIO {
     func isPinActive() -> Bool
 }
 
-extension GPIO {
+public extension GPIO {
     func getHeaderPin(_ id: String, board: Board) -> HeaderPin? {
         switch board {
             case .beagleboneai64: 
