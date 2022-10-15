@@ -18,7 +18,7 @@ enum GPIOChip: String {
 /**
  Board Types currently supported
  */
-enum Board {
+public enum Board {
     case beagleboneai64
     case beaglebonblack
 }
@@ -26,7 +26,7 @@ enum Board {
 /**
  Direction that pin can be configured for
  */
-enum DigitalGPIODirection: String {
+public enum DigitalGPIODirection: String {
     case IN="in"
     case OUT="out"
 }
@@ -34,7 +34,7 @@ enum DigitalGPIODirection: String {
 /**
  The value of the digitial GPIO pins
  */
-enum DigitalGPIOValue: UInt32 {
+public enum DigitalGPIOValue: UInt32 {
     case HIGH=1
     case LOW=0
 }
@@ -50,7 +50,7 @@ typealias HeaderPin = (line: UInt32, chip: GPIOChip)
 /**
  Protocol that all types designed to access the GPIO pins should conform too
  */
-protocol GPIO {
+public protocol GPIO {
     mutating func initPin(pinId: String, board: Board) -> Bool
     func isPinActive() -> Bool
 }
@@ -70,14 +70,14 @@ extension GPIO {
 /**
  The structure used to control the GPIO pins
 */
-struct DigitalGPIO: GPIO {
+public struct DigitalGPIO: GPIO {
     private var chipToUse: GPIOChip?
     private var lineNumber: UInt32?
     private var direction: DigitalGPIODirection?
     private var chipHandle: OpaquePointer?
     private var pinHandle: OpaquePointer?
 
-    init?(pinId: String, board: Board, direction: DigitalGPIODirection) {
+    public init?(pinId: String, board: Board, direction: DigitalGPIODirection) {
         guard initPin(pinId: pinId, board: board) else {
             return nil
         }
@@ -90,7 +90,7 @@ struct DigitalGPIO: GPIO {
         }
     }
 
-    mutating func initPin(pinId: String, board: Board) -> Bool {
+    public mutating func initPin(pinId: String, board: Board) -> Bool {
         if let headerPin = getHeaderPin(pinId, board: board) {
             chipToUse = headerPin.chip
             lineNumber = headerPin.line
@@ -105,14 +105,14 @@ struct DigitalGPIO: GPIO {
         return false
     }
 
-    func isPinActive() -> Bool {
+    public func isPinActive() -> Bool {
         guard let _ = chipToUse, let _ = chipHandle else {
             return false
         }
         return true
     }
 
-    func getValue() -> DigitalGPIOValue? {
+    public func getValue() -> DigitalGPIOValue? {
         let value = gpiod_line_get_value(pinHandle)
         switch value {
             case 0:
@@ -124,7 +124,7 @@ struct DigitalGPIO: GPIO {
         }
     }
 
-    func setValue(value: DigitalGPIOValue) -> Bool {
+    public func setValue(value: DigitalGPIOValue) -> Bool {
         guard direction == .OUT else {
             return false
         }
@@ -136,7 +136,7 @@ struct DigitalGPIO: GPIO {
         }
     }
 
-    func release() {
+    public func release() {
         gpiod_line_release(pinHandle)
         gpiod_chip_close(chipHandle)
     }
