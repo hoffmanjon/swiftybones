@@ -1,0 +1,4 @@
+module gpiod {
+    umbrella header "gpiod.h"
+    link "gpiod"
+}
