@@ -124,7 +124,7 @@ public struct DigitalGPIO: GPIO {
         }
     }
 
-    public func setValue(value: DigitalGPIOValue) -> Bool {
+    public func setValue(_ value: DigitalGPIOValue) -> Bool {
         guard direction == .OUT else {
             return false
         }
@@ -134,6 +134,12 @@ public struct DigitalGPIO: GPIO {
         } else {
             return false
         }
+    }
+
+    public reversePin() {
+        let current = getValue()
+        let setValue: DigitalGPIOValue = current == .HIGH ? .LOW : .HIGH
+        setValue(setValue)
     }
 
     public func release() {
