@@ -136,7 +136,7 @@ public struct DigitalGPIO: GPIO {
         }
     }
 
-    public reversePin() {
+    public func reversePin() {
         let current = getValue()
         let setValue: DigitalGPIOValue = current == .HIGH ? .LOW : .HIGH
         setValue(setValue)
