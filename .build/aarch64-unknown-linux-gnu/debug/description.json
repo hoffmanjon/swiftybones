@@ -1,0 +1,225 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.xctest",
+      "productName" : "swiftybonesPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.swiftybones-debug.module" : {
+      "executable" : "/usr/bin/swiftc",
+      "importPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/Sources/swiftybones/BoardDefinitions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/Sources/swiftybones/DigitialGPIO.swift"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "swiftybones",
+      "moduleOutputPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.swiftmodule",
+      "objects" : [
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions.swift.o",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-gnu",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j2",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/home/debian/swift/swiftybones/Sources/gpiod/module.modulemap",
+        "-module-cache-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/home/debian/swift/swiftybones/Sources/swiftybones/BoardDefinitions.swift",
+        "/home/debian/swift/swiftybones/Sources/swiftybones/DigitialGPIO.swift"
+      ],
+      "tempsPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.swiftybonesPackageTests-debug.module" : {
+      "executable" : "/usr/bin/swiftc",
+      "importPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/swiftybonesTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.swiftmodule"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "swiftybonesPackageTests",
+      "moduleOutputPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.swiftmodule",
+      "objects" : [
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.build/runner.swift.o",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.build/swiftybonesTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-gnu",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j2",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/home/debian/swift/swiftybones/Sources/gpiod/module.modulemap",
+        "-module-cache-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.build/swiftybonesTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/runner.swift",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/swiftybonesTests.swift"
+      ],
+      "tempsPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.swiftybonesTests-debug.module" : {
+      "executable" : "/usr/bin/swiftc",
+      "importPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/Tests/swiftybonesTests/swiftybonesTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.swiftmodule"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "swiftybonesTests",
+      "moduleOutputPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.swiftmodule",
+      "objects" : [
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.build/swiftybonesTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "aarch64-unknown-linux-gnu",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j2",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/home/debian/swift/swiftybones/Sources/gpiod/module.modulemap",
+        "-module-cache-path",
+        "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.build/swiftybonesTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/home/debian/swift/swiftybones/Tests/swiftybonesTests/swiftybonesTests.swift"
+      ],
+      "tempsPath" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+    "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/runner.swift" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesTests.build/swiftybonesTests.swift.o"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybonesPackageTests.derived/swiftybonesTests.swift"
+        }
+      ]
+    }
+  }
+}

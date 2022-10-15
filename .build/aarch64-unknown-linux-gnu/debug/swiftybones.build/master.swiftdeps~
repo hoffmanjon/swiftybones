@@ -1,0 +1,6 @@
+version: "Swift version 5.7 (swift-5.7-RELEASE)"
+options: "9207c99949324de1474b0fcaa2eea524d61d5f6c3fc38a0d58fb9bd3632e1d84"
+build_start_time: [1665849124, 696061134]
+build_end_time: [1665849130, 715461969]
+inputs:
+  "/home/debian/swift/swiftybones/Sources/swiftybones/swiftybones.swift": [1665848774, 105475902]

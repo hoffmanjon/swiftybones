@@ -1,0 +1,5 @@
+-lgpiod
+-lgpiod
+-lswift_Concurrency
+-lswiftCore
+-lswiftSwiftOnoneSupport

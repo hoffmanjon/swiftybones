@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/master.swiftdeps"
+  },
+  "/home/debian/swift/swiftybones/Sources/swiftybones/BoardDefinitions.swift": {
+    "dependencies": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions.d",
+    "object": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions.swift.o",
+    "swiftmodule": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions~partial.swiftmodule",
+    "swift-dependencies": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/BoardDefinitions.swiftdeps"
+  },
+  "/home/debian/swift/swiftybones/Sources/swiftybones/DigitialGPIO.swift": {
+    "dependencies": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO.d",
+    "object": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO.swift.o",
+    "swiftmodule": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO~partial.swiftmodule",
+    "swift-dependencies": "/home/debian/swift/swiftybones/.build/aarch64-unknown-linux-gnu/debug/swiftybones.build/DigitialGPIO.swiftdeps"
+  }
+}
