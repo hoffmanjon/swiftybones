@@ -45,7 +45,7 @@ public enum DigitalGPIOValue: UInt32 {
  the first value is the line number and the second value is the GPIO Chip
  This information for the HeaderPin will come from the board definition
  */
-typealias HeaderPin = (line: UInt32, chip: GPIOChip)
+public typealias HeaderPin = (line: UInt32, chip: GPIOChip)
 
 /**
  Protocol that all types designed to access the GPIO pins should conform too
