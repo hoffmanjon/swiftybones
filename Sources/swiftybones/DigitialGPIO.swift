@@ -138,8 +138,8 @@ public struct DigitalGPIO: GPIO {
 
     public func reversePin() {
         let current = getValue()
-        let setValue: DigitalGPIOValue = current == .HIGH ? .LOW : .HIGH
-        setValue(setValue)
+        let newValue: DigitalGPIOValue = current == .HIGH ? .LOW : .HIGH
+        let _ = setValue(newValue)
     }
 
     public func release() {

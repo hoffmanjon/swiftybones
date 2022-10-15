@@ -1,7 +1,7 @@
 version: "Swift version 5.7 (swift-5.7-RELEASE)"
 options: "9207c99949324de1474b0fcaa2eea524d61d5f6c3fc38a0d58fb9bd3632e1d84"
-build_start_time: [1665853985, 144291877]
-build_end_time: [1665853986, 92982053]
+build_start_time: [1665856259, 457844972]
+build_end_time: [1665856260, 455507040]
 inputs:
   "/home/debian/swift/swiftybones/Sources/swiftybones/BoardDefinitions.swift": [1665849427, 608918428]
-  "/home/debian/swift/swiftybones/Sources/swiftybones/DigitialGPIO.swift": [1665853979, 782481670]
+  "/home/debian/swift/swiftybones/Sources/swiftybones/DigitialGPIO.swift": [1665856253, 85590839]
