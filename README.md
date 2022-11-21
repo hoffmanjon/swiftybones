@@ -2,11 +2,12 @@
 
 This library is based on the libgpiod library as described in our previous post Controlling GPIO pins with libgpiod and Swift. We have mapped the pins for the BeagleBone Black and AI-64. If anyone has another board, like the Raspberry Pi and would like to map the GPIO pins, we would love to support other boards.
 
-Now the question is, how do we use this new library. Lets spend the rest of this post exploring that.   The first thing we need to do is to create a new swift project, we will call this project swiftybonestest.  Use the following commands to create the project
-
+Now the question is, how do we use this new library. The first thing we need to do is to create a new swift project, we will call this project swiftybonestest.  Use the following commands to create the project
+```
 mkdir swiftybonestest
 cd swiftybonestest
 swift package init --type executable
+```
 
 Now we will want to edit the Package.swift file so the project will download and use the Swiftybones module.  Open up the Package.swift file and add the lines that are highlighted in the following code.
 ```
