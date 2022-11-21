@@ -9,7 +9,7 @@ cd swiftybonestest
 swift package init --type executable
 
 Now we will want to edit the Package.swift file so the project will download and use the Swiftybones module.  Open up the Package.swift file and add the lines that are highlighted in the following code.
-
+```
 // swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
@@ -33,11 +33,11 @@ let package = Package(
             dependencies: ["swiftybonestest"]),
     ]
 )
-
+```
 Note, If you are using Swift 5.7 you can replace your Package.swift file with this one, but if you are using a different version you will want to just update your file with the highlighted lines.  
 
 Now we are ready to use the Swiftybones library.  Edit the Sources/swiftybonestest/swiftybonestest.swift file and add the following code.
-
+```
 import swiftybones
 
 @main
@@ -54,7 +54,7 @@ public struct swiftybonestest {
         }      
     }
 }
-
+```
 In this code we begin by importing the swiftybones module. We make the main() function async so we can use the Task.sleep() function. 
 
 The first line of the main() function initializes pin 4 of the P8 header using the DigitialGPIO(pinId:board:direction) function.  
